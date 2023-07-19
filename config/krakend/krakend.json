@@ -250,10 +250,10 @@
       "extra_config": {
         "auth/validator": {
           "alg": "RS256",
-          "audience": ["http://api.example.com"],
-          "roles_key": "http://api.example.com/custom/roles",
-          "roles": ["user", "admin"],
-          "jwk_url": "https://albert-test.auth0.com/.well-known/jwks.json"
+          "audience": ["https://hepta.com"],
+          "roles_key": "permissions",
+          "roles": ["read:messages"],
+          "jwk_url": "https://dev-srpxwpcuano5t45s.us.auth0.com/.well-known/jwks.json"
         }
       }
     },
@@ -268,11 +268,11 @@
       "extra_config": {
         "auth/validator": {
           "alg": "HS256",
-          "audience": ["http://api.example.com"],
-          "roles_key": "roles",
+          "audience": ["https://hepta.com"],
+          "roles_key": "permissions",
           "issuer": "https://krakend.io",
-          "roles": ["role_a", "role_c"],
-          "jwk_url": "http://fake_api:8080/jwk/symmetric.json",
+          "roles": ["read:messages"],
+          "jwk_url": "https://dev-srpxwpcuano5t45s.us.auth0.com/.well-known/jwks.json",
           "disable_jwk_security": true
         }
       }

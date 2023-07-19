@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Calling an API</title>
+  <title>API CREA-SP</title>
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +19,14 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Auth0 - JavaScript</a>
+          <a class="navbar-brand" href="#">CREA-SP Auth0 Login</a>
 
           <button id="btn-home-view" class="btn btn-primary btn-margin">
               Home
           </button>
 
           <button id="btn-profile-view" class="btn btn-primary btn-margin">
-              Profile
+              Perfil
           </button>
 
           <button id="btn-ping-view" class="btn btn-primary btn-margin">
@@ -53,11 +53,11 @@
 
       <!-- profile view -->
       <div id="profile-view" class="panel panel-default profile-area">
-        <div class="panel-heading"><h3>Profile</h3></div>
+        <div class="panel-heading"><h3>Perfil</h3></div>
         <div class="panel-body">
           <img class="avatar" alt="avatar">
           <div>
-            <label><i class="glyphicon glyphicon-user"></i> Nickname</label>
+            <label><i class="glyphicon glyphicon-user"></i> Usuário</label>
             <h3 class="nickname"></h3>
           </div>
           <pre class="full-profile"></pre>
@@ -66,22 +66,22 @@
 
       <!-- ping view -->
       <div id="ping-view" class="panel panel-default profile-area">
-        <div class="panel-heading"><h3>Make a Call to the Server</h3></div>
+        <div class="panel-heading"><h3>Realizar chamada ao servidor</h3></div>
         <div class="panel-body">
           <div>
             <p id="call-private-message">
-              Log in to call a private (secured) server endpoint.
+              Log in para chamada privada ao endpoint.
             </p>
 
             <button id="btn-ping-public" class="btn btn-primary">
-                Call Public
+                CHamada Pública
             </button>
 
             <button id="btn-ping-private" class="btn btn-primary">
-                Call Private
+                Chamada Privada
             </button>
           </div>
-          <h4>Response</h4>
+          <h4>Resposta</h4>
           <pre id="ping-message"></pre>
         </div>
       </div>

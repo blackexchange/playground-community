@@ -30,11 +30,11 @@ const checkJwt = jwt({
 const checkScopes = jwtAuthz([ 'read:messages' ]);
 
 app.get('/api/public', function(req, res) {
-  res.json({ message: "Hello from a public endpoint! You don't need to be authenticated to see this." });
+  res.json({ message: "Endpoint público! Não precisa estar autenticado para acessar." });
 });
 
 app.get('/api/private', checkJwt, checkScopes, function(req, res) {
-  res.json({ message: "Hello from a private endpoint! You need to be authenticated and have a scope of read:messages to see this." });
+  res.json({ message: "Endpoint Privado! Necessita estar autenticado e ter o escopo defindo de read:messages para acessar." });
 });
 
 app.listen(3001);

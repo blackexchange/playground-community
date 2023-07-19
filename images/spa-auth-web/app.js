@@ -104,7 +104,7 @@ window.addEventListener('load', function() {
       pingViewBtn.style.display = 'inline-block';
       pingPrivate.style.display = 'inline-block';
       callPrivateMessage.style.display = 'none';
-      loginStatus.innerHTML = 'You are logged in! You can now send authenticated requests to your server.';
+      loginStatus.innerHTML = 'Você está logado! Agora pode realizar chamadas privadas ao servidor.';
     } else {
       homeView.style.display = 'inline-block';
       loginBtn.style.display = 'inline-block';
@@ -115,7 +115,7 @@ window.addEventListener('load', function() {
       pingViewBtn.style.display = 'inline-block';
       pingPrivate.style.display = 'inline-block';
       callPrivateMessage.style.display = 'block';
-      loginStatus.innerHTML = 'You are not logged in! Please log in to continue.';
+      loginStatus.innerHTML = 'Você não está autenticado! Realize o login para continuar.';
     }
   }
 
@@ -124,7 +124,7 @@ window.addEventListener('load', function() {
       var accessToken = localStorage.getItem('access_token');
 
       if (!accessToken) {
-        console.log('Access token must exist to fetch profile');
+        console.log('Access token inexistente.');
       }
 
       webAuth.client.userInfo(accessToken, function(err, profile) {
